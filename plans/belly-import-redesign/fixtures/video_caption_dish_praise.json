@@ -1,0 +1,7 @@
+{
+  "kind": "video_caption",
+  "note": "Instagram reel praising one named dish, nothing written out, nothing promised elsewhere.",
+  "expect": "RECIPE_IN_MEDIA",
+  "text": "this chocolate chip cookie recipe never fails me!! it makes the best chewy cookies!!! \n@kitchenaidusa \n#baking #chocolatechipcookie #gooeycookies",
+  "current_expect": "POTENTIALLY_VIDEO_ONLY_RECIPE"
+}

@@ -1,0 +1,7 @@
+{
+  "kind": "caption",
+  "note": "Describes the dish and its toppings, promises the recipe by DM. Must stay a refusal.",
+  "expect": "RECIPE_GATED",
+  "text": "Coconut Thai Curry Beef Broth Bowls 🥥🌶️ Comment ‘recipe’ and I’ll send it straight to your DMs.🫶\n\nI’m a sucker for trying all the viral recipes.🤭 Can you tell?\n\nThis viral broth bowl has crispy caramelized beef, fluffy jasmine rice, and a rich coconut curry broth all piled into one big bowl.✨\n\nAdd some fresh cucumber, green onions, a squeeze of lime, and a spoonful of chili crunch and you have the coziest, umami-filled, broth bowl that I believe can practically heal you.😮‍💨\n\n#brothbowl #beefbrothbowl #beefandrice #beefbowl #beef",
+  "current_expect": "RECIPE_ELSEWHERE"
+}

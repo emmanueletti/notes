@@ -1,0 +1,7 @@
+{
+  "kind": "video_caption",
+  "note": "Instagram reel from the 2026-10-01 report: full ingredient list, method only in the video.",
+  "expect": "INGREDIENTS_WITHOUT_METHOD",
+  "text": "Easiest way to satisfy your pizza craving… plus it’s high fiber + protein 🍕🫘 healthy pizza beans recipe!\n\nIngredients:\n- white kidney beans (2 cans - using @edenfoods)\n- tomato sauce (1.5 cups - using @smashkitchen)\n- olive oil (1 tbsp - using @getgraza)\n- onion (1)\n- kale (1 cup or as desired)\n- garlic (4 cloves - using @dorotgardens)\n- Italian seasoning (1 tsp - using @thespicehouse)\n- mozzarella cheese (1/4 cup - using @organicvalley)\n- Parmesan cheese (2 tbsp)\n- salt (to taste)\n* using @hexclad kitchenware",
+  "current_expect": "INGREDIENTS_WITHOUT_METHOD"
+}

@@ -1,0 +1,7 @@
+{
+  "kind": "caption",
+  "note": "Ingredients in three groups behind a comment-for-recipe gate.",
+  "expect": "INGREDIENTS_WITHOUT_METHOD",
+  "text": "Crispy Cheesy Beef Pockets\n\nComment “Recipe” and I’ll send you the full recipe for free.\n\nIf you’re always looking for new dinner ideas, you’re in the right place. That’s why I share simple and affordable meals that help you eat better and spend less.\n\nFollow me for more Weeknight Staples.\n\nIngredients\n\nBeef Filling\n• 1 lb ground beef\n• 1 yellow onion, diced\n• 4 garlic cloves, minced\n• 1 tbsp chili powder\n• 1 tbsp cumin\n• 2 tsp garlic powder\n• 2 tsp paprika\n• 1 tsp onion powder\n• 1 tsp oregano\n• 1 tsp salt\n• 1 tsp black pepper\n• 2 tbsp tomato paste\n• ½ cup beef broth\n• ½ cup red bell pepper, diced\n• ½ cup green bell pepper, diced\n• ½ cup corn\n\nPockets\n• Burrito-size flour tortillas\n• Mozzarella cheese\n\nGarlic Butter\n• 3 tbsp butter, melted\n• 2 cloves garlic, minced\n• 1 tsp dried parsley",
+  "current_expect": "INGREDIENTS_WITHOUT_METHOD"
+}

@@ -1,0 +1,7 @@
+{
+  "kind": "video_caption",
+  "note": "Ingredients written, method left to the video. Stays INGREDIENTS_WITHOUT_METHOD, not the new code.",
+  "expect": "INGREDIENTS_WITHOUT_METHOD",
+  "text": "Butter Chicken🇮🇳\n\nIngredients:\n\n2lb of cubed chicken thighs \n1tbsp grated garlic\n1tbsp grated ginger\n2-3 tbsp Whole Fat Yogurt\nJuice from one lemon\n\nHomemade spice mix:\n\n1/2tsp paprika\n1/2tsp turmeric\n1tsp cumin\n1tsp cayenne\n1tsp chili powder\n1 tsp Salt\n2 tsp garam masala\n\nSauce:\n1tbsp butter + 1tbsp oil OR 2tbsp Ghee\n1 diced onion\n1tbsp garlic\n1/2tbsp ginger\n1/2tsp Garam masala\n1/2tsp coriander\n1/2tsp cumin\n1 cup plain tomato sauce, canned tomatoes, or crushed tomatoes. \n1 cup heavy cream\n\nAdd sugar to taste to balance out the tanginess from tomatoes\n\n#butterchicken #indianfood",
+  "current_expect": "INGREDIENTS_WITHOUT_METHOD"
+}

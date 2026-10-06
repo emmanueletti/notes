@@ -1,0 +1,6 @@
+{
+  "kind": "video_caption",
+  "note": "A method written as prose with no ingredient list. Ingredients named inside the steps are not a list.",
+  "expect": "STEPS_WITHOUT_INGREDIENTS",
+  "text": "Crispy roast potatoes 🥔 Preheat the oven to 220C. Parboil the potatoes for 8 minutes, drain and shake them in the pan to rough up the edges. Tip into a tray of hot oil and roast for 45 minutes, turning halfway. Salt them the moment they come out. #potatoes #sidedish #sundayroast"
+}

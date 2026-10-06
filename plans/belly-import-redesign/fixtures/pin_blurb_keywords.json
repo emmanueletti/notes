@@ -1,0 +1,7 @@
+{
+  "kind": "pin_blurb",
+  "note": "A pin that points nowhere, read for itself. A dish name and search terms, no quantities: must not be talked into a recipe.",
+  "expect": "RECIPE_IN_MEDIA",
+  "text": "Hailey bieber meatball | Healthy meals with cottage cheese, Healthy cottage cheese and sausage, Cottage cheese meatballs\nAug 4, 2026 — Hosting recipes, Healthy food menu, Foodie recipes",
+  "current_expect": "NOT_A_RECIPE"
+}

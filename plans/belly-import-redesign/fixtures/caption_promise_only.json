@@ -1,0 +1,7 @@
+{
+  "kind": "caption",
+  "note": "Nothing but a call to comment. The false positive the looser rules risk.",
+  "expect": "RECIPE_GATED",
+  "text": "Comment “Recipe” and I’ll DM you the link to my app! 👨‍🍳 \n\n#chicken #wrap #weightlossfood #dinnerideasُ",
+  "current_expect": "RECIPE_ELSEWHERE"
+}

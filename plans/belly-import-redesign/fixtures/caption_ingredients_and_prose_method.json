@@ -1,0 +1,7 @@
+{
+  "kind": "caption",
+  "note": "Full method in one prose paragraph after the ingredient list, buried under hashtags and brand tags. Failed INGREDIENTS_WITHOUT_METHOD in production.",
+  "expect": "success",
+  "text": "my friend asked where we should go for dinner tonight 👀\nFrench onion pasta soup\n4 yellow onions, diced\n4 lbs beef broth (64oz)\n1 stick unsalted butter \n2 tbsps Worcestershire sauce \n2 tbsps all purpose flour \nFresh thyme\n2 bay leaves\n2 tsps salt & pepper, add more to your liking\n1/4 cup white wine\n2 cups ditalini or any small shape pasta\nSliced bread\nGruyère cheese, freshly grated\n\nIn a large pot, melt butter on medium heat. Once it starts bubbling, add onions, salt and pepper and mix occasionally for 30 minutes on medium low heat. After 30 minutes, add Worcestershire sauce and turn to medium high heat stirring more frequently for 20 minutes. Once golden deglaze with white wine. Add flour, broth, thyme and bay leaves, and once simmering, add pasta. Cover and simmer on medium for another 8-10 minutes till pasta is cooked. Serve with cheesy bread, more Gruyère and enjoy! \n•\n•\n•\n#frenchonionsoup #dinnerideas #easyrecipe @williamssonomahome @caraway_home @pacificfoods @sprouts @ballerinafarmstore @crowcanyonhome @gruyere_aop @barillaus @organicvalley @mackenziechilds",
+  "current_expect": "success"
+}

@@ -1,0 +1,7 @@
+{
+  "kind": "pin_blurb",
+  "note": "A pin blurb that describes the dish in full sentences. Naming ingredients is not a recipe.",
+  "expect": "RECIPE_IN_MEDIA",
+  "text": "Ground beef meatballs over mashed potatoes | Meatballs with mashed potatoes and sauce, Meatloaf and mashed potatoes, Culinary chef\n28 Jun 2026 — A plate of food featuring grass-fed beef meatballs topped with tomato sauce and grated parmesan cheese, served over mashed potatoes and cauliflower. Learn to cook, Dinners",
+  "current_expect": "NOT_A_RECIPE"
+}

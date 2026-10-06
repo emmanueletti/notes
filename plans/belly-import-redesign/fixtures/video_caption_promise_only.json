@@ -1,0 +1,7 @@
+{
+  "kind": "video_caption",
+  "note": "Names one dish and promises the recipe in a comment. The recipe is elsewhere, not in the video: must be RECIPE_ELSEWHERE, never POTENTIALLY_VIDEO_ONLY_RECIPE.",
+  "expect": "RECIPE_GATED",
+  "text": "Steak frites like a pro! Comment “recipe” for the full written recipe.\n\nEverybody needs a steak frites recipe in their back pocket, and you can make it just as good as the restaurants right in your own kitchen.",
+  "current_expect": "RECIPE_ELSEWHERE"
+}

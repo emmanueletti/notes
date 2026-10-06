@@ -1,0 +1,7 @@
+{
+  "kind": "caption",
+  "note": "Three dish names, no quantities, recipes in the bio cookbook. Must stay a refusal, sent to paste the recipe.",
+  "expect": "RECIPE_GATED",
+  "text": "3 ways to level up ground chicken \n\nMediterranean Chicken poppers\nSmash Tacos\nJerk Chicken Poppers\n\nFollow @itzpmartin for full macro friendly recipes and workouts\n\nHigh Protein Cookbook in Bio🧑🏿‍🍳!\n\nFull recipes on page!\n\n#highprotein #mealprep #dinner",
+  "current_expect": "RECIPE_ELSEWHERE"
+}

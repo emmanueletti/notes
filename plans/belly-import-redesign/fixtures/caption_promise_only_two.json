@@ -1,0 +1,7 @@
+{
+  "kind": "caption",
+  "note": "Describes the dish, promises the recipe elsewhere. Must stay a refusal.",
+  "expect": "RECIPE_GATED",
+  "text": "Steak frites like a pro! Comment “recipe” for the full written recipe.\n\nEverybody needs a steak frites recipe in their back pocket, and you can make it just as good as the restaurants right in your own kitchen.",
+  "current_expect": "RECIPE_ELSEWHERE"
+}

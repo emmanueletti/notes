@@ -1,0 +1,7 @@
+{
+  "kind": "video_caption",
+  "note": "TikTok naming one dish and sending the reader to a newsletter for the recipe. The recipe is elsewhere, not in the video: must be RECIPE_ELSEWHERE, never POTENTIALLY_VIDEO_ONLY_RECIPE.",
+  "expect": "RECIPE_GATED",
+  "text": "mango sticky rice rice krispies 🥭 recipe on my substack #ricekrispietreats #mangostickyrice #mango #dessert #trending",
+  "current_expect": "RECIPE_ELSEWHERE"
+}

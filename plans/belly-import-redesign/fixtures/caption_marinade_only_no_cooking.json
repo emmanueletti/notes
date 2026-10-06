@@ -1,0 +1,7 @@
+{
+  "kind": "caption",
+  "note": "Full ingredient list with a marinate-and-freeze note but no cooking method. Guards the multi-part rule against reading a note as a method.",
+  "expect": "INGREDIENTS_WITHOUT_METHOD",
+  "text": "One Costco pack of chicken = 8 freezer-ready dinners. 👀\n\nThis freezer-friendly chicken shawarma is marinated with Greek yogurt and minimal oil to keep it juicy, flavorful, and macro-friendly.\n\n✅ Prep once\n✅ Freeze raw\n✅ Cook fresh\n\n🥙 Chicken Shawarma — 367 cal | 55P | 15F | 4C\n\nIngredients (8 servings)\n* 2.1kg boneless skinless chicken thighs\n* 200g 0% Greek yogurt\n* 2 tbsp olive oil\n* 4 garlic cloves\n* 1/4 cup lemon juice\n* 2 tbsp coriander\n* 2 tbsp cumin\n* 4 tsp cardamom\n* 2 tsp cayenne\n* 4 tsp smoked paprika\n* 4 tsp salt\n\n❄️ Freezer: Marinate for 3–20 hours before cooking or freezing. Freeze for up to 3–4 months.\n\n🍽️ Serving ideas: Rice or pita, sumac salad, and a Greek yogurt dip.\n\nYour future self will thank you for this one. 🙂‍↕️\n\n#mealprep #highproteinmeals #macrofriendly #fatlossmeals #freezerprep",
+  "current_expect": "INGREDIENTS_WITHOUT_METHOD"
+}

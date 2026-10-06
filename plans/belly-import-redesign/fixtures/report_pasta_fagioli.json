@@ -1,0 +1,7 @@
+{
+  "kind": "video_caption",
+  "note": "Instagram reel from the 2026-10-01 report: recipe on the creator's website and by comment keyword, no link.",
+  "expect": "RECIPE_GATED",
+  "text": "Save this recipe to your “Easy recipes” collection\n•\n\nIf you want a soup that eats like a full dinner, this Stanley Tucci pasta fagioli soup recipe is the one. It’s rich, tomatoey, and loaded with the good stuff — tender veg, hearty beans, some pasta, and a parmesan rind doing its magical “make everything taste expensive” thing.\n\nThe whole recipe is on my website! \n•\nSave this one folks! And comment “Recipe” to have the full recipe sent to you!",
+  "current_expect": "RECIPE_ELSEWHERE"
+}

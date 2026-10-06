@@ -1,0 +1,7 @@
+{
+  "kind": "video_caption",
+  "note": "A caption that writes the recipe link out in full. Code follows it; the model's answer does not matter.",
+  "expect": "FOLLOW_LINK",
+  "text": "Creamy tuscan salmon 🐟 Full recipe here: https://www.example-food-blog.test/tuscan-salmon/ #salmon #dinner",
+  "current_expect": "RECIPE_ELSEWHERE"
+}

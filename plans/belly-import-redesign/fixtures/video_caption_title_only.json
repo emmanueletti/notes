@@ -1,0 +1,7 @@
+{
+  "kind": "video_caption",
+  "note": "Instagram reel whose whole caption is the dish name. The recipe can only be in the video.",
+  "expect": "RECIPE_IN_MEDIA",
+  "text": "Perfect Crispy Potato’s",
+  "current_expect": "POTENTIALLY_VIDEO_ONLY_RECIPE"
+}

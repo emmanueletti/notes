@@ -1,0 +1,7 @@
+{
+  "kind": "video_caption",
+  "note": "Instagram reel cross-posted from YouTube Shorts. The caption is the dish name plus hashtags. The model read #youtubeshorts as sending the reader elsewhere and counted it NOT_A_RECIPE, dropping it from video demand.",
+  "expect": "RECIPE_IN_MEDIA",
+  "text": "One Pot Brown Butter Chocolate Chip Cookies #youtubeshorts #chocolatechipcookies #brownbutter",
+  "current_expect": "POTENTIALLY_VIDEO_ONLY_RECIPE"
+}
