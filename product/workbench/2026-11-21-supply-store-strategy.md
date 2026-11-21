@@ -13,6 +13,8 @@ Advice for a Workbench supply store. The founders decide the way forward; this c
 
 Sell only things that connect to something done in Workbench (taking in a job, finding it, updating it, handing it to another shop) and that shops reorder. That is the Shopify lesson: its card readers make Shopify the way a store takes payment, they are not a side business. Generic supplies make us a supplies catalogue with no advantage over Stuller or Rio Grande.
 
+Supplies are part of the hands-free position (`2026-11-21-brand-positioning.md`): scan instead of type.
+
 The link is the QR code. Workbench already prints QR codes on the technician copy and the customer stub. Supplies with a unique QR code let a shop scan to start an intake, open a job or change its status. That makes the counter faster, makes switching away costly (a drawer of printed envelopes), and puts our brand on things that travel between trade shops and stores.
 
 ## How to judge an item

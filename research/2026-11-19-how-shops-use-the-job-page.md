@@ -415,6 +415,12 @@ Building is paused. The next step is to wait two weeks and compare against the
 frozen baseline below. Whoever runs this (person or agent) follows these steps
 and writes the result here, under "Result".
 
+Change after the freeze (2026-11-21, not yet deployed): picking a job in global
+search now opens the job page, not Quick edit. Quick edit stays one → away in the
+job's actions and on the Jobs list. Expect fewer Quick edits with
+`source: "search"` once this deploys; count search-to-job-page-to-edit as the same
+loop, and note the deploy date when comparing.
+
 Where things stand on 2026-11-20:
 
 - Quick edit reached JC Surrey front (10), C Creations (54) and Fort Richmond

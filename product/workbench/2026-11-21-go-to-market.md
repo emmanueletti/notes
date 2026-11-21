@@ -8,9 +8,18 @@ Shift most time to distribution, but fix self-serve onboarding first. Every shop
 
 Order: plug the leak, grow through shops we already have, then add partners. No budget is needed if we trade value instead of money.
 
+## Pitch
+
+Sell time back, not features. Workbench is the back office that runs itself (`2026-11-21-brand-positioning.md`).
+
+- Wholesale: "1,000 jobs a month without retyping a single store form."
+- Independent brands: "stay at the bench and with your clients; Workbench handles the admin, and works with your Shopify."
+- It answers the objection that lost deals: manual entry too slow with people waiting in line.
+- Until photo intake is proven, pitch speed, taste and the Shopify fit, and show photo intake as what's coming.
+
 ## Market
 
-Vision: the Shopify of the jewellery industry, later the platform for craftspeople with repair and custom work (not phones or computers). Dream client: Veja's repair workshop in Paris. For now, niche down and master jewellery.
+Vision: the Shopify for independent jewellery brands (long term; publicly, "the back office that runs itself" until growth tools for shops are live, see `2026-11-21-brand-positioning.md`), later the platform for craftspeople with repair and custom work (not phones or computers). Dream client: Veja's repair workshop in Paris. For now, niche down and master jewellery.
 
 | Serve now, in this order | Main channel |
 | --- | --- |
@@ -44,6 +53,16 @@ Out of scope for now: legacy retail jewellers on The Edge, and mall chains like 
 | Students, free tier | Self-serve only |
 
 - Don't launch the free tier until self-serve works, or it fills Workbench with dead accounts. Use it to test self-serve.
+
+## 1b. Keep shops after the first month
+
+The first week decides whether a shop starts. These decide whether it stays:
+
+- **Drift signals**, checked weekly: jobs per week falling, nobody signing in for 7 days, no new customers. A drifting shop gets a personal message or call, not an automated email.
+- **Before a yearly renewal**: 9 shops pay yearly. Check in 30 days before each renewal date with what they got from the year (jobs tracked, time saved) and one question about what's missing.
+- **Failed payments**: a personal note the same day plus Stripe's retries, so a lapsed card never becomes a lost shop.
+- **Every cancellation**: ask for a 10-minute conversation, and record the reason in their words. A "no" names what to build or what to stop.
+- **Bringing in history**: shops leaving The Edge or spreadsheets need their customers and jobs moved over. Covered in the onboarding flow (email, plus a card in the getting started steps).
 
 ## 2. Setup question
 
@@ -147,7 +166,7 @@ Cheers,
 Emmanuel
 ```
 
-Follow-ups in the same thread. Stop when he replies.
+Follow-ups in the same thread. Stop when Nathan replies.
 
 - 2026-11-28: offer a 15-minute setup call with one real piece, Tuesday or Wednesday.
 - 2026-12-05: ask where they write down a repair or order today (paper envelope, spreadsheet, phone).

@@ -13,7 +13,7 @@ updated 2026-11-21.
 ## People
 
 - Sarah: owner and designer. Runs custom pieces. Barely uses Workbench, because
-  she doesn't handle repairs.
+  they don't handle repairs.
 - Florence Gauthier Charest: manager. Runs the repair counter on Workbench.
 - Our side: Mackenzie (demoed custom projects v1), Emmanuel (developer, followed
   up).
@@ -65,12 +65,15 @@ updated 2026-11-21.
 - Data to hold: ring size, metal colour and karat, several projects per client,
   several estimates per project.
 - Sarah is the one to win, not Florence. Florence chose the repair tool. Sarah
-  chooses the custom tool, and she cares about speed above all.
+  chooses the custom tool, and they care about speed above all.
+- For Sarah, "the back office that runs itself" means: drop the sketches,
+  renderings and STL files in, and Workbench files them
+  (`2026-11-21-brand-positioning.md`).
 
 ## Speed is the product
 
 To win Sarah, Workbench needs the obsession with speed that Linear and Ramp
-have: every action lands on screen the moment she makes it, with no waiting on
+have: every action lands on screen the moment they make it, with no waiting on
 the server.
 
 Decided 2026-11-21: performance-tuned Hotwire with hand-built optimistic
@@ -117,7 +120,7 @@ that uses it needs a measurement showing Hotwire fell short.
 - Evidence is one studio. Ask 4 more independent studios how they track a custom
   piece today and what takes the most time, before building beyond what Sarah
   needs. Owner: founders.
-- When to show Sarah again, and what to show her. Owner: Mackenzie.
+- When to show Sarah again, and what to show them. Owner: Mackenzie.
 
 ## References
 
