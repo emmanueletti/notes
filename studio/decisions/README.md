@@ -30,8 +30,3 @@ Do not log every small choice. Log the ones that matter.
 
 (Newest first)
 
-- [2026-04-17 — Channel choice: in-person primary](./2026-04-17-channel-in-person-primary.md)
-- [2026-04-17 — Path (b): in-person bootstrap → word-of-mouth scale](./2026-04-17-path-b-bootstrap-then-mouth.md)
-- [2026-04-17 — Pricing test: $60 CAD/mo for new customers](./2026-04-17-pricing-test-60-cad.md)
-- [2026-04-17 — 18-month strategic arc to 150-200 customers](./2026-04-17-18-month-arc.md)
-- [2026-04-17 — Workbench is sole product focus until profitable](./2026-04-17-workbench-sole-focus.md)

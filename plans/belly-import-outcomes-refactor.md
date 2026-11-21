@@ -299,7 +299,7 @@ Never both in one step. Suite green after every step; one source at a time.
    POTENTIALLY_VIDEO_ONLY_RECIPE to RECIPE_IN_MEDIA and RECIPE_ELSEWHERE to
    RECIPE_GATED in failed_recipe_imports. NO_INGREDIENTS_OR_STEPS and old social
    NOT_A_RECIPE rows are left: their meaning cannot be recovered per row.
-   Human runs it on production after step 6 deploys, then deletes the task.
+   Ran on production 2026-10-06; task removed afterwards.
 
 ## Fetch: one agent
 
@@ -392,6 +392,8 @@ separate; keep or drop it with the Web step.
 
 ## After this plan: remove forwarding `self.call`
 
+DONE 2026-10-06 ("remove class-level call methods that only forward to new"): 13 classes, ~35 callers, ~115 test stubs (`any_instance.stubs(:call)`, or `expects(:new).with(...).returns(stub(call: ...))` where the stub checked arguments). `RecipeIngest.call` kept: it does real work.
+
 Not a codebase convention, and unwanted: a class method whose whole body is
 `new(...).call` only exists to skip writing `.new`. It spread because agents
 copied it. A class-level builder earns its place when it does real work
@@ -428,6 +430,8 @@ it. Existing classes, `RecipeExtraction` included, keep it until the sweep.
 
 ## After this plan: `def self.` to `class << self`
 
+DONE 2026-10-06 ("move class methods into class << self"): 46 methods in 30 files; `private_class_method` methods moved under `private` in the block; Analytics and IngredientImages::Generator merged into their existing blocks. None left in app/ or lib/.
+
 House style: class methods live in a `class << self` block, with `private`
 inside it for class-level helpers, never as `def self.method`. As of
 2026-10-01 there are 86 `def self.` methods in 53 files under `app/` and
@@ -440,4 +444,24 @@ inside it for class-level helpers, never as `def self.method`. As of
   than moved, so do that sweep first and convert what is left.
 - Keep it mechanical: move each method into the block unchanged, keep public
   and private as they were, suite green, no other edits in the same commit.
+
+## Open items, sized 2026-10-06 (AppSignal, last 30 days)
+
+- Page-text eval: PARKED. The model read a web page without JSON-LD 17 times
+  in 30 days (vs 112 pasted text, 92 captions, 88 photos, 11 video captions;
+  ~761 URL import requests all-time). Revisit when a digest shows a web recipe
+  the model read badly. The three web fixtures guard against regressions.
+- Pin URL caching: PARKED. Pinterest was 2 of 40 sampled URL imports (5%), both
+  on Oct 5-6, one failed; neither was a repeat share. Revisit if a digest
+  shows the same pin shared repeatedly or pins reach ~10% of imports.
+- Instagram is the signal: 10 of 40 sampled URL imports (25%), 4 of them
+  failed; the largest single source and the most failure-prone. After step 6
+  deploys, its failures split into RECIPE_IN_MEDIA / RECIPE_GATED / signed out.
+  In 2-3 weeks, pull RECIPE_IN_MEDIA + INGREDIENTS_WITHOUT_METHOD per source:
+  that is the evidence for or against building video and carousel import.
+- Production was on 303022f (step 3 live, step 6 pushed but not deployed).
+  After the deploy: run `backfills:run:failed_import_reasons`, check
+  `recipe_fetch_impersonating` logs, read the first rows with the new codes.
+- Sampling note: the trace list returns newest first, so a limit-10 pull per
+  window is a 1-2 day snapshot, not a spread. Use smaller windows next time.
 

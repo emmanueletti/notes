@@ -1,0 +1,334 @@
+<title>Bella Button Looks</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,400;1,500&display=swap">
+<style>
+  /* Layout: a review sheet of four phone-sized mockups of the real prep plan, each with one Bella button look, plus a close-up of the button. */
+  :root {
+    --page: oklch(96.5% 0.008 65);
+    --surface: oklch(100% 0 0);
+    --ink: oklch(21.6% 0.028 53);
+    --muted: oklch(52% 0.02 60);
+    --line: oklch(90% 0.01 65);
+    --accent: oklch(55% 0.06 30);
+
+    /* The app itself is light only, so the phone mockups keep these in both themes. */
+    --app-bg: oklch(100% 0 0);
+    --app-ink: oklch(21.6% 0.028 53);
+    --app-muted: oklch(55% 0.02 60);
+    --app-line: oklch(92% 0.008 65);
+    --app-oat: oklch(93% 0.01 66);
+    --ivory: oklch(98.5% 0.008 75);
+    --oat-50: oklch(98% 0.009 66);
+    --oat-200: oklch(86% 0.016 66);
+    --blush: oklch(93% 0.025 35);
+    --blush-deep: oklch(84% 0.045 30);
+    --clay: oklch(62% 0.07 35);
+    --aubergine: oklch(30% 0.045 340);
+    --champagne: oklch(90% 0.04 80);
+    --warning-bg: oklch(96.5% 0.028 85);
+    --warning-fg: oklch(45% 0.09 70);
+
+    --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+    --font-body: "Geist", ui-sans-serif, system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --page: oklch(20% 0.012 55);
+      --surface: oklch(25% 0.014 55);
+      --ink: oklch(94% 0.01 65);
+      --muted: oklch(72% 0.015 60);
+      --line: oklch(34% 0.015 55);
+      --accent: oklch(78% 0.06 35);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --page: oklch(20% 0.012 55);
+    --surface: oklch(25% 0.014 55);
+    --ink: oklch(94% 0.01 65);
+    --muted: oklch(72% 0.015 60);
+    --line: oklch(34% 0.015 55);
+    --accent: oklch(78% 0.06 35);
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--page);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.5;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 32px 64px;
+  }
+  .wrap { max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 32px; }
+
+  header { display: flex; flex-direction: column; gap: 8px; max-width: 62ch; }
+  h1 { font-family: var(--font-display); font-weight: 500; font-size: clamp(28px, 4vw, 40px); line-height: 1.1; margin: 0; text-wrap: balance; }
+  h1 em { font-weight: 400; }
+  header p { margin: 0; color: var(--muted); }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 24px; }
+
+  .option { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+  .option-head { display: flex; align-items: baseline; gap: 10px; }
+  .letter { font-family: var(--font-display); font-style: italic; font-size: 22px; color: var(--accent); }
+  .option h2 { margin: 0; font-size: 17px; font-weight: 600; }
+  .option p { margin: 0; color: var(--muted); font-size: 14px; }
+
+  .closeup {
+    display: grid; place-items: center; min-height: 120px;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 18px;
+  }
+
+  /* Phone mockup */
+  .phone {
+    position: relative; width: 100%; max-width: 320px; aspect-ratio: 9 / 17; margin: 0 auto;
+    background: var(--app-bg); color: var(--app-ink); border-radius: 34px; overflow: hidden;
+    border: 8px solid oklch(18% 0.01 55);
+    box-shadow: 0 20px 40px -24px oklch(20% 0.02 55 / 0.45);
+    font-size: 13px;
+  }
+  .screen { position: absolute; inset: 0; padding: 18px 16px 0; display: flex; flex-direction: column; gap: 6px; }
+  .party-name { font-family: var(--font-display); font-size: 22px; font-weight: 600; line-height: 1.15; }
+  .when { color: var(--app-muted); font-size: 12px; }
+  .tabs { display: flex; align-items: center; justify-content: space-between; margin-top: 6px; }
+  .tabs span { font-family: var(--font-display); font-size: 18px; white-space: nowrap; }
+  .tabs .off { color: oklch(55% 0.02 60 / 0.7); }
+  .tabs .row { display: flex; gap: 14px; }
+  .add { border: 1px solid var(--app-line); border-radius: 999px; padding: 4px 10px; font-size: 11px; font-weight: 500; }
+  .banner { background: var(--warning-bg); color: var(--warning-fg); border-radius: 10px; padding: 8px 10px; font-size: 12px; margin-top: 4px; }
+  .task { display: flex; align-items: center; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--app-line); }
+  .task time { width: 52px; color: var(--app-muted); font-variant-numeric: tabular-nums; font-size: 12px; }
+  .task span { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .tick { width: 18px; height: 18px; border-radius: 50%; border: 1.5px solid var(--app-line); flex-shrink: 0; }
+  .arrive { display: flex; align-items: center; gap: 8px; padding: 8px 0; font-size: 12px; font-weight: 500; }
+  .arrive i { flex: 1; height: 1px; background: var(--app-line); }
+  .tabbar {
+    position: absolute; left: 10px; right: 10px; bottom: 10px; height: 46px; border-radius: 23px;
+    background: var(--app-bg); border: 1px solid var(--app-line); display: flex; justify-content: space-around; align-items: center;
+    box-shadow: 0 6px 20px -12px oklch(20% 0.02 55 / 0.35);
+  }
+  .tabbar b { width: 18px; height: 18px; border-radius: 6px; background: var(--app-oat); }
+  .fab-slot { position: absolute; right: 14px; bottom: 68px; }
+
+  .star { width: 9px; height: 9px; flex-shrink: 0; }
+
+  /* Shared: matte, no glow, one soft drop for lift off the plan. */
+  .fab {
+    display: inline-flex; align-items: center; height: 48px; border-radius: 999px; cursor: pointer; border: 0;
+    box-shadow: 0 8px 22px -12px oklch(20% 0.02 50 / 0.55);
+    white-space: nowrap;
+  }
+
+  /* A: espresso, sans */
+  .espresso {
+    gap: 9px; padding: 0 22px 0 19px; background: oklch(25% 0.018 50); color: oklch(95% 0.012 75);
+    font: 500 14px/1 var(--font-body); letter-spacing: 0.06em;
+  }
+  .espresso .star { color: oklch(80% 0.05 80); }
+
+  /* B: espresso, serif italic, champagne star */
+  .espresso-serif {
+    gap: 9px; padding: 0 22px 0 19px; background: oklch(25% 0.018 50); color: oklch(92% 0.03 80);
+    font: italic 400 19px/1 var(--font-display); letter-spacing: 0.01em;
+  }
+  .espresso-serif .star { color: oklch(80% 0.05 80); }
+
+  /* C: aubergine with a fine inset rule */
+  .ruled {
+    position: relative; padding: 0 24px; background: oklch(28% 0.04 345); color: oklch(92% 0.03 80);
+    font: italic 400 19px/1 var(--font-display); letter-spacing: 0.01em;
+  }
+  .ruled::before { content: ""; position: absolute; inset: 3px; border-radius: 999px; border: 0.5px solid oklch(85% 0.04 80 / 0.45); pointer-events: none; }
+
+  /* D: ink with a monogram disc */
+  .monogram {
+    gap: 11px; padding: 0 20px 0 6px; background: oklch(21.6% 0.028 53); color: oklch(95% 0.012 75);
+    font: 500 14px/1 var(--font-body); letter-spacing: 0.06em;
+  }
+  .monogram .disc {
+    width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center;
+    background: oklch(93% 0.025 35); color: oklch(30% 0.04 345);
+    font: italic 500 19px/1 var(--font-display); letter-spacing: 0;
+  }
+  .monogram .disc span { transform: translateY(-1px); }
+
+  /* Oat versions: same four, light. A hairline border keeps oat off the white plan. */
+  .oat { background: oklch(93% 0.01 66); color: oklch(21.6% 0.028 53); box-shadow: 0 0 0 1px oklch(86% 0.016 66) inset, 0 8px 22px -14px oklch(40% 0.03 50 / 0.5); }
+  .oat.espresso-serif .star { color: oklch(62% 0.07 35); }
+  .oat.ruled::before { border-color: oklch(62% 0.07 35 / 0.5); }
+  .oat.monogram .disc { background: oklch(21.6% 0.028 53); color: oklch(93% 0.01 66); }
+
+  /* Shimmer border on A: a champagne highlight spins behind a slightly inset espresso face, so only a 1.5px edge shows it. */
+  .shimmer {
+    position: relative; overflow: hidden; isolation: isolate;
+    background: oklch(38% 0.02 55);
+  }
+  .shimmer::before {
+    content: ""; position: absolute; left: 50%; top: 50%; width: 260%; aspect-ratio: 1; z-index: -2;
+    translate: -50% -50%;
+    background: conic-gradient(transparent 0deg 220deg, oklch(80% 0.06 80) 275deg, oklch(98% 0.03 85) 300deg, oklch(80% 0.06 80) 325deg, transparent 360deg);
+  }
+  .shimmer::after {
+    content: ""; position: absolute; inset: 1.5px; border-radius: inherit; z-index: -1;
+    background: oklch(25% 0.018 50);
+  }
+  .shimmer.loop::before { animation: spin 3.5s linear infinite; }
+  .shimmer.pulse::before { animation: spin-rest 6s cubic-bezier(.65,0,.35,1) infinite; }
+  .shimmer.static::before {
+    background: linear-gradient(115deg, oklch(45% 0.02 55) 20%, oklch(92% 0.05 82) 48%, oklch(45% 0.02 55) 72%, oklch(78% 0.05 80) 100%);
+  }
+  @keyframes spin { to { rotate: 360deg; } }
+  @keyframes spin-rest { 0% { rotate: 0deg; } 35%, 100% { rotate: 360deg; } }
+
+  button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  .group-title { margin: 8px 0 -12px; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .note { font-size: 13px; color: var(--muted); max-width: 70ch; }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c.6 6.4 5.6 11.4 12 12-6.4.6-11.4 5.6-12 12-.6-6.4-5.6-11.4-12-12 6.4-.6 11.4-5.6 12-12z"/></symbol>
+  </defs>
+</svg>
+
+<template id="plan">
+  <div class="screen">
+    <div class="party-name">✨ Halloween bash</div>
+    <div class="when">Sat, Oct 31 · 7 PM</div>
+    <div class="tabs">
+      <div class="row"><span class="off">Menu</span><span>Prep plan</span></div>
+      <span class="add">+ Add task</span>
+    </div>
+    <div class="banner">2 tasks behind schedule</div>
+    <div class="task"><time>3:30 PM</time><span>Brine the chicken thighs</span><b class="tick"></b></div>
+    <div class="task"><time>4:00 PM</time><span>Bake the pumpkin bread</span><b class="tick"></b></div>
+    <div class="task"><time>5:15 PM</time><span>Roast the squash</span><b class="tick"></b></div>
+    <div class="task"><time>6:00 PM</time><span>Make the cider punch</span><b class="tick"></b></div>
+    <div class="task"><time>6:30 PM</time><span>Set out the cheese board</span><b class="tick"></b></div>
+    <div class="arrive"><span>7:00 PM</span><i></i><span>Guests arrive</span></div>
+  </div>
+  <div class="tabbar"><b></b><b></b><b></b><b></b></div>
+</template>
+
+<template id="look-a"><button class="fab espresso"><svg class="star" aria-hidden="true"><use href="#star"/></svg>ask bella</button></template>
+<template id="look-b"><button class="fab espresso-serif"><svg class="star" aria-hidden="true"><use href="#star"/></svg>ask bella</button></template>
+<template id="look-c"><button class="fab ruled">ask bella</button></template>
+<template id="look-s1"><button class="fab espresso shimmer loop"><svg class="star" aria-hidden="true"><use href="#star"/></svg>ask bella</button></template>
+<template id="look-s2"><button class="fab espresso shimmer pulse"><svg class="star" aria-hidden="true"><use href="#star"/></svg>ask bella</button></template>
+<template id="look-s3"><button class="fab espresso shimmer static"><svg class="star" aria-hidden="true"><use href="#star"/></svg>ask bella</button></template>
+<template id="look-e"><button class="fab espresso oat">ask bella</button></template>
+<template id="look-f"><button class="fab espresso-serif oat"><svg class="star" aria-hidden="true"><use href="#star"/></svg>ask bella</button></template>
+<template id="look-g"><button class="fab ruled oat">ask bella</button></template>
+<template id="look-h"><button class="fab monogram oat"><span class="disc"><span>b</span></span>ask bella</button></template>
+<template id="look-d"><button class="fab monogram"><span class="disc"><span>b</span></span>ask bella</button></template>
+
+<div class="wrap">
+  <header>
+    <h1>ask bella</h1>
+    <p>Eight takes, all lowercase: four dark, then the same four in oat. No gradients, glow or animation: matte colour, careful type, and one detail each. Each sits on a phone mock of the real page, with a close-up underneath.</p>
+  </header>
+
+  <h2 class="group-title">Shimmer border on A</h2>
+  <div class="grid">
+    <section class="option" aria-labelledby="s1-title">
+      <div class="option-head"><span class="letter">A1</span><h2 id="s1-title">Slow loop</h2></div>
+      <p>A champagne glint travels around the 1px edge every 4 seconds, without stopping.</p>
+      <div class="phone" data-plan data-look="look-s1"></div>
+      <div class="closeup" data-look="look-s1"></div>
+    </section>
+
+    <section class="option" aria-labelledby="s2-title">
+      <div class="option-head"><span class="letter">A2</span><h2 id="s2-title">Glint, then rest</h2></div>
+      <p>One quick pass around the edge, then still for about 5 seconds. Catches the eye without fidgeting.</p>
+      <div class="phone" data-plan data-look="look-s2"></div>
+      <div class="closeup" data-look="look-s2"></div>
+    </section>
+
+    <section class="option" aria-labelledby="s3-title">
+      <div class="option-head"><span class="letter">A3</span><h2 id="s3-title">Still foil</h2></div>
+      <p>No motion: a fixed champagne-to-espresso edge, like foil catching light. The calmest version.</p>
+      <div class="phone" data-plan data-look="look-s3"></div>
+      <div class="closeup" data-look="look-s3"></div>
+    </section>
+  </div>
+
+  <h2 class="group-title">All options</h2>
+  <div class="grid">
+    <section class="option" aria-labelledby="a-title">
+      <div class="option-head"><span class="letter">A</span><h2 id="a-title">Espresso, sans</h2></div>
+      <p>Warm near-black, a tiny still champagne star, and "ask bella" in the app's sans with open letter spacing. Closest to a skincare label.</p>
+      <div class="phone" data-plan data-look="look-a"></div>
+      <div class="closeup" data-look="look-a"></div>
+    </section>
+
+    <section class="option" aria-labelledby="b-title">
+      <div class="option-head"><span class="letter">B</span><h2 id="b-title">Espresso, serif</h2></div>
+      <p>The same espresso with "ask bella" in italic Playfair and a tiny still champagne star. Softer and more personal.</p>
+      <div class="phone" data-plan data-look="look-b"></div>
+      <div class="closeup" data-look="look-b"></div>
+    </section>
+
+    <section class="option" aria-labelledby="c-title">
+      <div class="option-head"><span class="letter">C</span><h2 id="c-title">Aubergine, ruled</h2></div>
+      <p>Deep aubergine, italic serif, and a hairline champagne rule just inside the edge, like a debossed card.</p>
+      <div class="phone" data-plan data-look="look-c"></div>
+      <div class="closeup" data-look="look-c"></div>
+    </section>
+
+    <section class="option" aria-labelledby="d-title">
+      <div class="option-head"><span class="letter">D</span><h2 id="d-title">Ink, monogram</h2></div>
+      <p>The app's ink with a small blush disc holding an italic "b", then "ask bella" in spaced sans. The disc can become Bella's mark elsewhere.</p>
+      <div class="phone" data-plan data-look="look-d"></div>
+      <div class="closeup" data-look="look-d"></div>
+    </section>
+    <section class="option" aria-labelledby="e-title">
+      <div class="option-head"><span class="letter">E</span><h2 id="e-title">Oat, sans</h2></div>
+      <p>Oat with ink type and a hairline edge. The light twin of A: the quietest option on the page.</p>
+      <div class="phone" data-plan data-look="look-e"></div>
+      <div class="closeup" data-look="look-e"></div>
+    </section>
+
+    <section class="option" aria-labelledby="f-title">
+      <div class="option-head"><span class="letter">F</span><h2 id="f-title">Oat, serif</h2></div>
+      <p>Oat with italic serif and a small clay star. Warm, like linen stationery.</p>
+      <div class="phone" data-plan data-look="look-f"></div>
+      <div class="closeup" data-look="look-f"></div>
+    </section>
+
+    <section class="option" aria-labelledby="g-title">
+      <div class="option-head"><span class="letter">G</span><h2 id="g-title">Oat, ruled</h2></div>
+      <p>Oat with italic serif and a clay hairline just inside the edge. The light twin of C.</p>
+      <div class="phone" data-plan data-look="look-g"></div>
+      <div class="closeup" data-look="look-g"></div>
+    </section>
+
+    <section class="option" aria-labelledby="h-title">
+      <div class="option-head"><span class="letter">H</span><h2 id="h-title">Oat, monogram</h2></div>
+      <p>Oat pill with an ink disc holding the italic "b". The mark flips dark, so it still reads as Bella's.</p>
+      <div class="phone" data-plan data-look="look-h"></div>
+      <div class="closeup" data-look="look-h"></div>
+    </section>
+  </div>
+
+  <p class="note">These are mockups, not the app. Whichever you pick, the button shows on the prep plan only and opens the same Bella sheet, which can carry the same type so it feels like one piece.</p>
+</div>
+
+<script>
+  const plan = document.getElementById("plan");
+  document.querySelectorAll("[data-plan]").forEach((phone) => {
+    phone.append(plan.content.cloneNode(true));
+    const slot = document.createElement("div");
+    slot.className = "fab-slot";
+    slot.append(document.getElementById(phone.dataset.look).content.cloneNode(true));
+    phone.append(slot);
+  });
+  document.querySelectorAll(".closeup[data-look]").forEach((box) => {
+    box.append(document.getElementById(box.dataset.look).content.cloneNode(true));
+  });
+</script>
